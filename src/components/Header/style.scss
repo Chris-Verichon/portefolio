@@ -1,0 +1,83 @@
+.header {
+  background-image: url("./wallpaperbetter.jpg");
+  height: 100vh;
+  
+
+  &_home {
+    margin-left: 2.5em;
+    
+    &-img {
+      height: 4em;
+      
+    }
+  }
+
+  &_navigation {
+    text-align: center;
+    color: white;
+    padding-top: 1em;
+    
+
+    &-item {
+      font-size: 1.5em;
+      padding: 1em;
+
+      &:hover {
+        color: #e4b358;
+        
+      }
+      
+    }
+  }
+  &_title{
+    overflow:hidden;
+    font-family: 'Love Light', cursive;
+
+    &-item {
+      color: rgba(255, 255, 255, 0.445);
+      
+      text-align: center;
+      font-size: 8em;
+      margin-top: 0.5em;
+      background: #FFFFFF;
+      background: radial-gradient(circle farthest-corner at top left, #FFFFFF 55%, #0D0101 75%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation-duration: 4s;
+      animation-name: slideintitle;
+    }
+
+  }
+  
+}
+
+.header_title-subtitle {
+  color: #ffffff;
+  font-size: 8em;
+  text-align: center;
+  margin-top: 1em;
+  animation-duration: 4s;
+  animation-name: slideinsubtitle;
+}
+
+@keyframes slideintitle {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slideinsubtitle {
+  from {
+    margin-right: 100%;
+    width: 300%;
+  }
+  to {
+    margin-right: 0;
+    width: 100%;
+  }
+}
