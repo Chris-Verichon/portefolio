@@ -1,14 +1,15 @@
 .header {
   background-image: url("./wallpaperbetter.jpg");
   height: 100vh;
+  overflow:hidden;
   
 
   &_home {
     margin-left: 2.5em;
-    
+    animation-duration: 4s;
+    animation-name: slideintitle;
     &-img {
       height: 4em;
-      
     }
   }
 
@@ -16,6 +17,8 @@
     text-align: center;
     color: white;
     padding-top: 1em;
+    animation-duration: 4s;
+    animation-name: slideintitle;
     
 
     &-item {
@@ -23,7 +26,7 @@
       padding: 1em;
 
       &:hover {
-        color: #e4b358;
+        color: goldenrod;
         
       }
       

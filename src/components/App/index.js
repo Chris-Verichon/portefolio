@@ -1,4 +1,6 @@
 // == Import
+import Bio from '../Bio';
+import Competences from '../Competences';
 import Header from '../Header';
 import './styles.scss';
 
@@ -7,6 +9,8 @@ function App() {
   return (
     <div className="app">
       <Header />
+      <Bio />
+      <Competences />
     </div>
   );
 }

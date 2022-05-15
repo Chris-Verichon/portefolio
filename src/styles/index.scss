@@ -1,8 +1,19 @@
 @use 'reset';
 @use 'vars';
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: sans-serif;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
 }
 
 /* 
