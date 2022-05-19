@@ -1,51 +1,38 @@
 .header {
-  background-image: url("./wallpaperbetter.jpg");
+  background-image: url("src/assets/images/wallpaperbetter.jpg");
+  max-width: 100%;
   height: 100vh;
   overflow:hidden;
+
+  &-container {
+    margin: 0em 6em;
+  }
+  
   
 
   &_home {
     margin-left: 2.5em;
     animation-duration: 4s;
     animation-name: slideintitle;
+    position: absolute;
     &-img {
       height: 4em;
     }
   }
 
-  &_navigation {
-    text-align: center;
-    color: white;
-    padding-top: 1em;
-    animation-duration: 4s;
-    animation-name: slideintitle;
-    
-
-    &-item {
-      font-size: 1.5em;
-      padding: 1em;
-
-      &:hover {
-        color: goldenrod;
-        
-      }
-      
-    }
-  }
   &_title{
+    margin-top: 13em;
     overflow:hidden;
+    position: relative;
+    background-color: #0d01014d;
+
     font-family: 'Love Light', cursive;
 
     &-item {
-      color: rgba(255, 255, 255, 0.445);
-      
       text-align: center;
       font-size: 8em;
-      margin-top: 0.5em;
-      background: #FFFFFF;
-      background: radial-gradient(circle farthest-corner at top left, #FFFFFF 55%, #0D0101 75%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      padding-top: 0.2em;
+      color: white;
       animation-duration: 4s;
       animation-name: slideintitle;
     }
@@ -54,13 +41,16 @@
   
 }
 
-.header_title-subtitle {
+.header_subtitle-subtitle {
   color: #ffffff;
   font-size: 8em;
+  padding: 0.3em 0em;
   text-align: center;
-  margin-top: 1em;
   animation-duration: 4s;
   animation-name: slideinsubtitle;
+  background-color: #0d01014d;
+  position: relative;
+  font-family: 'Love Light', cursive;
 }
 
 @keyframes slideintitle {
@@ -82,5 +72,61 @@
   to {
     margin-right: 0;
     width: 100%;
+  }
+}
+
+@media all and (max-width: 991px) {
+
+  .header {
+    background-image: url("src/assets/images/wallpaperbetter.jpg");
+    max-width: 100%;
+    height: 100vh;
+    overflow:hidden;
+  
+    &-container {
+      margin: 0em;
+    }
+    
+    
+  
+    &_home {
+      margin-left: 0;
+      animation-duration: 4s;
+      animation-name: slideintitle;
+      position: absolute;
+    }
+  
+    &_title{
+      margin-top: 14em;
+      overflow:hidden;
+      position: relative;
+      background-color: #0d01014d;
+  
+      font-family: 'Love Light', cursive;
+  
+      &-item {
+        text-align: center;
+        font-size: 5em;
+        padding-top: 0.3em;
+        padding-bottom: 0.3em;
+        color: white;
+        animation-duration: 4s;
+        animation-name: slideintitle;
+      }
+  
+    }
+    
+  }
+
+  .header_subtitle-subtitle {
+    color: #ffffff;
+    font-size: 4em;
+    padding: 0.3em 0em;
+    text-align: center;
+    animation-duration: 4s;
+    animation-name: slideinsubtitle;
+    background-color: #0d01014d;
+    position: relative;
+    font-family: 'Love Light', cursive;
   }
 }

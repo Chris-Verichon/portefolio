@@ -1,0 +1,108 @@
+.image {
+  background-image: url("src/assets/images/wallpaperbetter.jpg");
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.navigation {
+  text-align: center;
+  color: white;
+  animation-duration: 4s;
+  animation-name: slideintitle;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  
+  
+  
+
+  &-item {
+    font-size: 1.5em;
+    padding: 1em;
+    
+
+    &:hover {
+      color: goldenrod;
+      
+    }
+    
+  }
+}
+
+label, #toggle
+{
+    display: none;
+}
+ 
+@media all and (max-width: 991px)
+{
+    nav
+    {
+        height: 60px;
+    }
+ 
+    nav .main_pages 
+    {
+        display: none;
+        flex-direction: column;
+        height: 160px;
+        top: 2px;
+        left: 0px;
+        padding-left: 2px;
+        background-color: rgba(0, 0, 0, 0.233);
+        position: absolute;
+        background-image: url("src/assets/images/wallpaperbetter.jpg");
+        border-radius: 5px;
+    }
+ 
+    nav .main_pages a {
+        width: 50%;
+        padding-bottom: 0.2em;
+        
+    }
+
+    .navigation {
+      text-align: left;
+      color: white;
+      animation-duration: 4s;
+      animation-name: slideintitle;
+      display: flex;
+      justify-content: center;
+      height: 60px;
+      
+      
+      
+    
+      &-item {
+        font-size: 1em;
+        padding: 0em;
+        margin: 0.3em;
+        
+    
+        &:hover {
+          color: goldenrod;
+          
+        }
+        
+      }
+    }
+ 
+    label 
+    {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+    }
+ 
+    #toggle:checked + .main_pages {
+      display: flex;
+    }
+
+    
+}
