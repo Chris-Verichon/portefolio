@@ -1,7 +1,15 @@
 .bio {
   height: 100vh;
-  width: 95%;
+  width: 85%;
   margin: auto;
+
+  &-img {
+    height: 20em;
+    width: 20em;
+    float: right;
+    margin: 0em  5em 0em 1em;
+    clip-path: circle(50% at 50% 50%);
+  }
 
   &-title {
     font-size: 6em;
@@ -38,6 +46,13 @@
     
     width: 95%;
     margin: auto;
+
+    &-img {
+      height: 10em;
+      width: 10em;
+      float: inline-end;
+      clip-path: circle(50% at 50% 50%);
+    }
   
     &-title {
       font-size: 6em;
