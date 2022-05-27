@@ -1,29 +1,25 @@
-.image {
-  background-image: url("src/assets/images/wallpaperbetter.jpg");
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-}
+@import url('https://rsms.me/inter/inter.css');
 
 .navigation {
   text-align: center;
-  color: white;
-  animation-duration: 4s;
-  animation-name: slideintitle;
   display: flex;
   justify-content: center;
+  position: fixed;
+  width: 100%;
+  z-index: 6;
   padding: 1em;
-  
-  
-  
+  margin-bottom: 2em;
+  background-color: #efefef;
 
   &-item {
-    font-size: 1.5em;
+    font-size: 1.6em;
     padding: 1em;
+    font-weight: 600;
+    font-family: 'Inter var', sans-serif;
     
 
     &:hover {
-      color: goldenrod;
+      color: rgba(23,136,183,255);
       
     }
     
@@ -52,7 +48,6 @@ label, #toggle
         padding-left: 2px;
         background-color: rgba(0, 0, 0, 0.233);
         position: absolute;
-        background-image: url("src/assets/images/wallpaperbetter.jpg");
         border-radius: 5px;
     }
  
@@ -64,14 +59,12 @@ label, #toggle
 
     .navigation {
       text-align: left;
-      color: white;
-      animation-duration: 4s;
+      color: black;
       animation-name: slideintitle;
+      animation-duration: 4s;  
       display: flex;
       justify-content: center;
       height: 60px;
-      
-      
       
     
       &-item {
@@ -81,7 +74,7 @@ label, #toggle
         
     
         &:hover {
-          color: goldenrod;
+          color: rgba(23,136,183,255);
           
         }
         
@@ -96,7 +89,7 @@ label, #toggle
         align-items: center;
         margin: 0 auto;
         font-size: 40px;
-        color: white;
+        color: black;
         cursor: pointer;
     }
  
@@ -105,4 +98,15 @@ label, #toggle
     }
 
     
+}
+
+@keyframes slideintitle {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
