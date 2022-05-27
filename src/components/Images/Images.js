@@ -5,7 +5,7 @@ import { Image, useScroll } from '@react-three/drei';
 
 import images9 from 'src/assets/images/image9.jpg';
 import images10 from 'src/assets/images/image10.jpg';
-import images11 from 'src/assets/images/image11.jpg';
+import images12 from 'src/assets/images/image12.jpg';
 import images13 from 'src/assets/images/wallpaperbetter.jpg';
 import voyage1 from 'src/assets/images/image13.jpg';
 
@@ -26,7 +26,7 @@ function Images() {
   return (
     <group ref={group}>
       <Image position={[-1.5, 0, 0]} scale={[8, height, 1]} url={images9} />
-      <Image position={[3, 0, 1]} scale={3} url={images11} />
+      <Image position={[3, 0, 1]} scale={3} url={images12} />
       <Image position={[-2.5, -height, 2]} scale={[1, 3, 1]} url={images10} />
       <Image position={[-0.6, -height, 3]} scale={[1, 2, 1]} url={images10} />
       <Image position={[0.6, -height, 4]} scale={1} url={images10} />

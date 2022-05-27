@@ -10,7 +10,7 @@ import './styles.scss';
 
 function App() {
   return (
-    <div className="app">
+    <div id="app" className="app">
       <Nav />
       <Canvas gl={{ antialias: false }} dpr={[1, 1.5]}>
         <Suspense fallback={null}>
@@ -21,7 +21,7 @@ function App() {
             <Scroll html>
               <h1 className="home" style={{ position: 'absolute', top: '60vh', left: '0.5em' }}>Chris</h1>
               <h1 className="home" style={{ position: 'absolute', top: '120vh', left: '30vw' }}>Verichon</h1>
-              <h1 className="home" style={{ position: 'absolute', top: '208vh', left: '0.5vw', fontSize: '10vw' }}>Web dev FullStack</h1>
+              <h1 className="home" style={{ position: 'absolute', top: '210vh', left: '0.5vw', fontSize: '7vw' }}>Développeur Web</h1>
             </Scroll>
           </ScrollControls>
           <Preload />

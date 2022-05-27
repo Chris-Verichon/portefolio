@@ -1,6 +1,8 @@
+@import url('https://rsms.me/inter/inter.css');
+
 .bio {
   height: 100vh;
-  width: 85%;
+  width: 95%;
   margin: auto;
 
   &-img {
@@ -12,14 +14,15 @@
   }
 
   &-title {
-    font-size: 6em;
+    font-size: 5em;
     padding-top: 0.8em;
-    font-weight: bold;
-    font-family: 'Love Light', cursive;
-    color: goldenrod;
+    font-weight: 400;
+    font-family: 'Inter var', sans-serif;
+    color: rgba(23,136,183,255);
 
     &-img {
       height: 1em;
+      margin-right: 0.5em;
     }
     
   }
@@ -55,7 +58,7 @@
     }
   
     &-title {
-      font-size: 6em;
+      font-size: 4em;
       padding-top: 0.8em;
       font-weight: bold;
       font-family: 'Love Light', cursive;

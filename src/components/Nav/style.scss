@@ -1,19 +1,26 @@
 @import url('https://rsms.me/inter/inter.css');
 
+.navigation-author {
+  padding-right: 90vh;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
 .navigation {
   text-align: center;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   position: fixed;
   width: 100%;
   z-index: 6;
   padding: 1em;
   margin-bottom: 2em;
   background-color: #efefef;
+  font-family: 'Inter var', sans-serif;
 
   &-item {
-    font-size: 1.6em;
-    padding: 1em;
+    font-size: 1.5em;
+    padding: 0.7em;
     font-weight: 600;
     font-family: 'Inter var', sans-serif;
     
