@@ -47,7 +47,7 @@ const data = [
         logo: '',
       },
     ],
-    skillsBack: [
+    skillsBscssack: [
       {
         id: 1,
         skillName: 'PHP',

@@ -46,7 +46,7 @@ const Skills = () => {
             </li>
           ))}
         </ul>
-        <h2 className="competences_list-title">Skills Back-end :</h2>
+        <h2 className="competences_list-title"> Skills Back-end :</h2>
         <ul className="competences_content-list">
           {skillsBack.map((item) => (
             <li
