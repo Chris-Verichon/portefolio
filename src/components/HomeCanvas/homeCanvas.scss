@@ -1,0 +1,10 @@
+.homeCanvas {
+  height: 100%;
+}
+
+@media all and (max-width: 991px)
+{
+  .homeCanvas {
+    display: none;
+  }
+}

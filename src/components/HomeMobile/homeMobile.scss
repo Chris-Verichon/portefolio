@@ -1,0 +1,20 @@
+.homeMobile {
+    padding-top: 10em;
+    background-image: url( "../../assets/images/image9.jpg" );
+    background-size: cover;
+    max-width: 100%;
+
+    &-title {
+      font-size: 3em;
+    }
+
+
+  }
+
+
+@media all and (min-width: 991px)
+{ 
+  .homeMobile {
+    display: none;
+  }
+}
