@@ -1,0 +1,108 @@
+@import url('https://rsms.me/inter/inter.css');
+
+
+.competences {
+  height: 100vh;
+  width: 80%;
+  margin: auto;
+  overflow:hidden;
+  font-family: 'Inter var', sans-serif;
+
+  .competences_intro {
+    font-size: 1.2em;
+    width: 80%;
+    margin: 3em auto;
+    text-align: justify;
+
+    .competences_intro-span {
+      font-style: italic;
+      text-decoration: underline;
+    }
+  }
+
+  .competences_transverses {
+    font-size: 2em;
+    margin-bottom: 0.8em;
+
+    
+  }
+
+  .competences_transverses-content {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+  }
+
+  &_content {
+
+
+    &-title {
+      font-size: 5em;
+      padding-top: 0.8em;
+      font-weight: 400;
+      font-family: 'Inter var', sans-serif;
+      color: rgba(23,136,183,255);
+      
+
+      &-img {
+        height: 1em;
+      }
+      
+    }
+
+    .competences_list-title {
+      font-size: 1.8em;
+      margin-top: 2em;
+      font-style: italic;
+      text-decoration: underline;
+    }
+
+    &-list {
+      margin-top: 1em;
+      display: flex;
+      flex-direction: row;
+
+      &--item {
+        font-size: 1.3em;
+        margin-top: 0.5em;
+        margin-right: 2em;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 991px) {
+  .competences {
+    height: 100%;
+    margin-top: 65em;
+    width: 100%;
+
+  
+    &_content {
+      width: 100%;
+  
+  
+      &-title {
+        font-size: 4em;
+        padding-top: 0.8em;
+        font-weight: bolder;
+        font-family: 'Love Light', cursive;
+        color: goldenrod;
+        
+  
+        &-img {
+          height: 1em;
+        }
+        
+      }
+  
+      &-list {
+        margin-top: 3em;
+  
+        &--item {
+          font-size: 1.5em;
+          margin-top: 0.5em;
+        }
+      }
+    }
+  }
+}

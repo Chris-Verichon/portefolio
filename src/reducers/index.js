@@ -1,12 +1,8 @@
-const initialState = {
-  // ici le state initial
-};
+import { combineReducers } from 'redux';
+import personalReducer from './personalReducer';
 
-const reducer = (state = initialState, action = {}) => {
-  switch (action.type) {
-    default:
-      return state;
-  }
-};
+const rootReducer = combineReducers({
+  personnal: personalReducer,
+});
 
-export default reducer;
+export default rootReducer;
