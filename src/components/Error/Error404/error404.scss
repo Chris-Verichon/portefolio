@@ -1,0 +1,134 @@
+.error404 {
+
+  text-align: center;
+  height: 100vh;
+
+
+  .error404_item {
+    font-size: 15em;
+    padding-top: 0.5em;
+
+    .error404_item-1 {
+
+      animation-name: errorAparition, color1;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+    .error404_item-2 {
+
+      animation-name: errorAparition, color2;
+      animation-duration: 4s;
+      animation-delay: 2s;
+      animation-iteration-count: infinite;
+      
+    }
+    .error404_item-3 {
+
+      animation-name: errorAparition, color3;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      
+    }
+  }
+
+  .error404_content {
+    margin-top: 1em;
+    font-size: 2em;
+  }
+
+  .error404_content2 {
+    margin-top: 1em;
+    font-size: 1.5em;
+    margin-bottom: 3em;
+  }
+
+  .error404_link {
+    border: solid 1px rgb(3, 77, 3);
+    font-size: 1.2em;
+    padding: 0.5em;
+    color: white;
+    background-color: rgb(3, 77, 3);
+
+    &:hover {
+      background-color: rgb(4, 51, 112);
+      color: white;
+      font-size: 1.4em;
+      border: solid 1px rgb(4, 51, 112);
+    }
+  }
+ 
+}
+
+@keyframes errorAparition {
+
+  0% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+  
+}
+
+@keyframes color1 {
+
+  0% {
+    color: rgb(4, 51, 112);
+  }
+
+  33% {
+    color: rgb(3, 77, 3);
+  }
+
+  66% {
+    color: rgb(90, 3, 3);
+  }
+
+  100% {
+    color: rgb(95, 95, 2);
+  }
+  
+}
+
+@keyframes color2 {
+
+  0% {
+    color: rgb(4, 51, 112);
+  }
+
+  33% {
+    color: rgb(90, 3, 3);
+  }
+
+  66% {
+    
+    color: rgb(3, 77, 3);
+  }
+
+  100% {
+    color: rgb(95, 95, 2);
+  }
+  
+}
+
+@keyframes color3 {
+
+  0% {
+    
+    color: rgb(95, 95, 2);
+  }
+
+  33% {
+    color: rgb(90, 3, 3);
+  }
+
+  66% {
+    color: rgb(3, 77, 3);
+  }
+
+  100% {
+    color: rgb(4, 51, 112);
+  }
+  
+}

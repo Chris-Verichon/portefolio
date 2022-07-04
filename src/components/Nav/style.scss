@@ -9,7 +9,7 @@
 .navigation {
   text-align: center;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   position: fixed;
   width: 100%;
   z-index: 6;
@@ -27,9 +27,18 @@
 
     &:hover {
       color: rgba(23,136,183,255);
+      font-size: 1.35em;
       
     }
     
+  }
+
+  .navigation-item--active {
+    font-size: 1.2em;
+    padding: 0.7em;
+    font-weight: 600;
+    font-family: 'Inter var', sans-serif;
+    color: rgba(23,136,183,255);
   }
 }
 
@@ -38,7 +47,7 @@ label, #toggle
     display: none;
 }
  
-@media all and (max-width: 991px)
+@media all and (max-width: 1350px)
 {
 
   .navigation-author {
@@ -91,6 +100,13 @@ label, #toggle
           
         }
         
+      }
+
+      .navigation-item--active {
+        font-size: 1em;
+        padding: 0em;
+        margin: 0.3em;
+        color: rgba(23,136,183,255);
       }
     }
  
