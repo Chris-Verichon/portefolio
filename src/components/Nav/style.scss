@@ -1,7 +1,6 @@
 @import url('https://rsms.me/inter/inter.css');
 
 .navigation-author {
-  padding-right: 80vh;
   font-size: 1.2em;
   font-weight: 600;
 }
@@ -14,6 +13,7 @@
   width: 100%;
   z-index: 6;
   padding: 1em;
+  height: 3.5em;
   margin-bottom: 2em;
   background-color: #efefef;
   font-family: 'Inter var', sans-serif;
@@ -27,7 +27,7 @@
 
     &:hover {
       color: rgba(23,136,183,255);
-      font-size: 1.35em;
+      font-size: 1.5em;
       
     }
     
@@ -47,7 +47,7 @@ label, #toggle
     display: none;
 }
  
-@media all and (max-width: 1350px)
+@media all and (max-width: 900px)
 {
 
   .navigation-author {
@@ -64,28 +64,35 @@ label, #toggle
     {
         display: none;
         flex-direction: column;
-        height: 160px;
+        width: 100%;
         top: 3.7em;
         right: 0px;
-        padding-left: 2px;
-        background-color: rgba(253, 249, 249, 0.233);
+        
+        background-color: #efefef;
         position: absolute;
-        border-radius: 5px;
+        border-radius: 0 0 30px 30px;
+        text-align: center;
     }
  
     nav .main_pages a {
-        width: 50%;
+        
         padding-bottom: 0.2em;
+        border-radius: 10px;
+        box-shadow: black;
+        margin-left: 0em;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        width: 100%;
+        height: 2em;
+        text-align: center;
+        padding-bottom: 0.5em;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
         
     }
 
     .navigation {
       text-align: left;
       color: black;
-      animation-name: slideintitle;
-      animation-duration: 4s;  
-      display: flex;
-      justify-content: center;
       height: 60px;
       
     
@@ -103,18 +110,18 @@ label, #toggle
       }
 
       .navigation-item--active {
-        font-size: 1em;
+        font-size: 1.2em;
         padding: 0em;
         margin: 0.3em;
         color: rgba(23,136,183,255);
       }
     }
  
-    label 
+    .label 
     {
         width: 30px;
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
         margin: 0 auto;
         font-size: 40px;
@@ -127,15 +134,4 @@ label, #toggle
     }
 
     
-}
-
-@keyframes slideintitle {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
 }

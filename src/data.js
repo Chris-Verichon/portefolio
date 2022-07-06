@@ -6,6 +6,8 @@ import sassBig from 'src/assets/images/sassBig.png';
 import typescriptBig from 'src/assets/images/typescriptBig.png';
 import phpBig from 'src/assets/images/phpBig.png';
 import nodejsBig from 'src/assets/images/nodejsbig.png';
+import mySql from 'src/assets/images/mysql.png';
+import sql from 'src/assets/images/base-de-donnees.png';
 
 const data = [
   {
@@ -87,12 +89,12 @@ const data = [
       {
         id: 2,
         skillName: 'SQL',
-        logo: '',
+        logo: sql,
       },
       {
         id: 3,
         skillName: 'MySQL',
-        logo: '',
+        logo: mySql,
       },
     ],
   },
