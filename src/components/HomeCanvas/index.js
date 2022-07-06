@@ -1,7 +1,7 @@
 import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { Preload, ScrollControls, Scroll } from '@react-three/drei';
-import Images from 'src/components/Images/Images';
+import Images from 'src/components/HomeCanvas/Images/Images';
 
 import './homeCanvas.scss';
 
@@ -16,7 +16,7 @@ const HomeCanvas = () => (
           <Scroll html>
             <h1 className="home" style={{ position: 'absolute', top: '60vh', left: '0.5em' }}>Chris</h1>
             <h1 className="home" style={{ position: 'absolute', top: '120vh', left: '30vw' }}>Verichon</h1>
-            <h1 className="home" style={{ position: 'absolute', top: '210vh', left: '0.5vw', fontSize: '7vw' }}>Développeur Web</h1>
+            <h1 className="home" style={{ position: 'absolute', top: '210vh', left: '0.5vw', fontSize: '7vw' }}>Développeur Web Fullstack</h1>
           </Scroll>
         </ScrollControls>
         <Preload />
