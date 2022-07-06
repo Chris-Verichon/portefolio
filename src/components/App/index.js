@@ -9,7 +9,6 @@ import HomeCanvas from '../HomeCanvas';
 // Import components
 import HomeMobile from '../HomeMobile';
 import Error404 from '../Error/Error404';
-import Contact from '../contact';
 
 // == Import style
 import './styles.scss';
@@ -21,7 +20,6 @@ function App() {
         <Route path="/" element={<><Nav /><HomeCanvas /><HomeMobile /></>} />
         <Route path="/A-propos" element={<><Nav /><Bio /></>} />
         <Route path="/Skills" element={<><Nav /><Skills /></>} />
-        <Route path="/Contact" element={<><Nav /><Contact /></>} />
         <Route path="*" element={<Error404 />} />
       </Routes>
       {/* <HomeMobile /> */}

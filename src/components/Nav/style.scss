@@ -3,20 +3,37 @@
 .navigation-author {
   font-size: 1.2em;
   font-weight: 600;
+  padding-left: 2em;
 }
+
 
 .navigation {
   text-align: center;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: fixed;
   width: 100%;
   z-index: 6;
-  padding: 1em;
   height: 3.5em;
   margin-bottom: 2em;
   background-color: #efefef;
   font-family: 'Inter var', sans-serif;
+
+  .navigation_list {
+    display: flex;
+    flex-direction: row;
+    
+    .navigation_list-item {
+      align-items: center;
+      margin-left: 1.2em;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .hover-img {
+    margin-left: 1em;
+  }
 
   &-item {
     font-size: 1.2em;
@@ -27,7 +44,6 @@
 
     &:hover {
       color: rgba(23,136,183,255);
-      font-size: 1.5em;
       
     }
     
@@ -51,10 +67,12 @@ label, #toggle
 {
 
   .navigation-author {
-    padding-right: 2em;
+    padding-left: 1em;
     font-size: 1.5em;
     font-weight: 600;
   }
+
+  
     nav
     {
         height: 60px;
@@ -94,6 +112,14 @@ label, #toggle
       text-align: left;
       color: black;
       height: 60px;
+
+      .navigation_list {
+        display: none;
+    
+        .navigation_list-item {
+          display: none;
+        }
+      }
       
     
       &-item {
