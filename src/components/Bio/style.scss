@@ -1,87 +1,111 @@
 @import url('https://rsms.me/inter/inter.css');
 
-.bio {
-  height: 100vh;
-  width: 95%;
-  margin: auto;
+.title {
 
-  &-img {
-    height: 20em;
-    width: 20em;
-    float: right;
-    margin: 0em  5em 0em 1em;
-    clip-path: circle(50% at 50% 50%);
+  font-size: 3em;
+  padding-top: 1.5em;
+  font-weight: 400;
+  font-family: 'Inter var', sans-serif;
+  color: rgba(23,136,183,255);
+        
+
+  .title_img {
+    height: 1em;
+    padding-right: 0.5em;
   }
 
-  &-title {
-    font-size: 5em;
-    padding-top: 0.8em;
-    font-weight: 400;
-    font-family: 'Inter var', sans-serif;
-    color: rgba(23,136,183,255);
+   .title_link {
 
-    &-img {
-      height: 1em;
-      margin-right: 0.5em;
-    }
-    
-  }
-
-  &-subtitle {
-    font-size: 2em;
-    margin-top: 0.8em;
-    font-weight: bold;
-  }
-
-  &-content {
-    margin-top: 1em;
-    font-size: 1.3em;
-    line-height: 1.5em;
-    line-break: strict;
-    text-align: justify;
   }
 }
 
+.bioContainer {
 
-@media all and (max-width: 991px) {
+  width: 100%;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(src/assets/images/image9.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -2;
+
 
   .bio {
-    
     width: 95%;
     margin: auto;
+    color: #dbd8d8;
+    background-color: rgba(12, 12, 12, 0.548);
+    
+    border-radius: 2em;
+    -webkit-box-shadow: 1px 1px 17px 13px rgba(0,0,0,0.82); 
+    box-shadow: 1px 1px 17px 13px rgba(0,0,0,0.82);
 
-    &-img {
+    .bio_title {
+      margin-top: 2em;
+      font-size: 1.4em;
+      font-weight: bold;
+      color: rgba(23,136,183,255);
+    }
+
+    .bio_subtitle {
+      text-align: center;
+      margin-top: 1em;
+      font-size: 1.5em;
+      
+
+    }
+
+    .bio_legend {
+      text-align: center;
+      font-style: italic;
+      margin-top: 0.5em;
+    }
+
+
+    .bio_img {
       height: 10em;
       width: 10em;
-      float: inline-end;
+      display: block;
+      margin: 1em auto auto auto;
       clip-path: circle(50% at 50% 50%);
     }
-  
-    &-title {
-      font-size: 4em;
-      padding-top: 0.8em;
-      font-weight: bold;
-      font-family: 'Love Light', cursive;
-      color: goldenrod;
-  
-      &-img {
-        height: 1em;
-      }
-      
-    }
-  
-    &-subtitle {
-      font-size: 2em;
-      margin-top: 0.8em;
-      font-weight: bold;
-    }
-  
-    &-content {
+
+    .bio_intro {
+      font-size: 1.2em;
+      line-height: 1.2em;
       margin-top: 1em;
-      font-size: 1.3em;
-      line-height: 1.5em;
-      line-break: strict;
-      text-align: justify;
+    }
+
+    .bio_content {
+      font-size: 1.2em;
+      line-height: 1.2em;
+      margin-top: 1em;
     }
   }
+
+  .footer {
+    margin-top: 2em;
+    padding: 0.5em;
+    color: rgb(194, 190, 190);
+    text-align: center;
+  }
+
+}
+
+@media all and (min-width: 990px) {
+
+  .title {
+    font-size: 5em;
+    margin-left: 0.2em;
+    padding-top: 1em;
+  }
+
+  .bioContainer {
+    .bio {
+      width: 70%;
+      padding: 1em;
+      margin-top: 2em;
+    }
+  }
+  
 }
