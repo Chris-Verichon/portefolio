@@ -61,14 +61,6 @@ const Project = () => (
         <p className="project_card-content">Application pour me présenter c'est un peu comme ma carte de visite numérique. Techno utilisé: ReactJs, javascript,  Sass, Css, Html</p>
         <a
           className="project_card-link"
-          href="https://tawdry-view.surge.sh/"
-          rel="noreferrer"
-          target="_blank"
-        >
-          Lien de l'app
-        </a>
-        <a
-          className="project_card-link"
           href="https://github.com/Chris-Verichon/portefolio"
           rel="noreferrer"
           target="_blank"
