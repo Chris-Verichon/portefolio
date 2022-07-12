@@ -15,7 +15,7 @@ const HomeMobile = () => (
           </Scroll>
           <Scroll html>
             <h1 className="home" style={{ position: 'absolute', top: '51vh', left: '0.1em' }}>Chris</h1>
-            <h1 className="home" style={{ position: 'absolute', top: '93vh', left: '35vw' }}>Verichon</h1>
+            <h1 className="home" style={{ position: 'absolute', top: '93vh', left: '33vw' }}>Verichon</h1>
             <h1 className="home" style={{ position: 'absolute', top: '228vh', left: '0.1em', fontSize: '4em' }}>Développeur Web Fullstack</h1>
           </Scroll>
         </ScrollControls>

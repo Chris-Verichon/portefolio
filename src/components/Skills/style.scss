@@ -110,6 +110,16 @@
 }
 
 @media all and (max-width: 991px) {
+
+  .containerWidth {
+    width: 100%;
+    margin: auto;
+    overflow:hidden;
+    font-family: 'Inter var', sans-serif;
+  }
+  
+  
+
   .competences {
     width: 95%;
     margin: auto;
@@ -162,8 +172,8 @@
   
   
       &-title {
-        font-size: 3em;
-        padding-top: 1.5em;
+        font-size: 2.5em;
+        padding-top: 2em;
         font-weight: 400;
         font-family: 'Inter var', sans-serif;
         color: rgba(23,136,183,255);
