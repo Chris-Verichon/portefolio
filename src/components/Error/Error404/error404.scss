@@ -5,7 +5,7 @@
 
 
   .error404_item {
-    font-size: 15em;
+    font-size: 10em;
     padding-top: 0.5em;
 
     .error404_item-1 {
@@ -54,10 +54,12 @@
       color: white;
       font-size: 1.4em;
       border: solid 1px rgb(4, 51, 112);
+    
     }
   }
  
 }
+
 
 @keyframes errorAparition {
 
